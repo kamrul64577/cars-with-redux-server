@@ -28,7 +28,7 @@ console.log(uri)
 async function run() {
     try {
         await client.connect();
-        const database = client.db('Shome_Shoes');
+        const database = client.db('cars_redux');
         const userCollection = database.collection('users');
         const productsCollection = database.collection('products');
         const reviewsCollection = database.collection('reviews');
@@ -197,7 +197,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send('Hello Shome Cars!')
+    res.send('Hello  Cars Bd!')
 })
 
 app.listen(port, () => {
